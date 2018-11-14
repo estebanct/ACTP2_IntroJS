@@ -34,7 +34,6 @@ de un segundo, al volver hacer click debe volver a estar en blanco y negro.
       </style>
   </head>
   <body>
-    <img src="https://loremflickr.com/320/240?random=1" />
     <img src="https://loremflickr.com/320/240?random=2" />
     <img src="https://loremflickr.com/320/240?random=3" />
     <img src="https://loremflickr.com/320/240?random=4" />
@@ -42,6 +41,7 @@ de un segundo, al volver hacer click debe volver a estar en blanco y negro.
     <img src="https://loremflickr.com/320/240?random=6" />
     <img src="https://loremflickr.com/320/240?random=7" />
     <img src="https://loremflickr.com/320/240?random=8" />
+    <img src="https://loremflickr.com/320/240?random=1" />
     <img src="https://loremflickr.com/320/240?random=9" />
     <img src="https://loremflickr.com/320/240?random=10" />
     <img src="https://loremflickr.com/320/240?random=11" />
@@ -49,7 +49,7 @@ de un segundo, al volver hacer click debe volver a estar en blanco y negro.
 
     <script>
       $("img").on("click", function(){
-        $(this).addClass("img-no");
+        $(this).toggleClass("img-no");
       })
     </script>
 

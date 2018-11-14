@@ -11,9 +11,47 @@ de un segundo, al volver hacer click debe volver a estar en blanco y negro.
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Galeria 2</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+      <style>
+        img {
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: gray;
+        }
+        .img-no {
+        filter: none;
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        cursor: pointer;
+        transition-duration: 1s;
+        }
+      </style>
   </head>
   <body>
+    <img src="https://loremflickr.com/320/240?random=1" />
+    <img src="https://loremflickr.com/320/240?random=2" />
+    <img src="https://loremflickr.com/320/240?random=3" />
+    <img src="https://loremflickr.com/320/240?random=4" />
+    <img src="https://loremflickr.com/320/240?random=5" />
+    <img src="https://loremflickr.com/320/240?random=6" />
+    <img src="https://loremflickr.com/320/240?random=7" />
+    <img src="https://loremflickr.com/320/240?random=8" />
+    <img src="https://loremflickr.com/320/240?random=9" />
+    <img src="https://loremflickr.com/320/240?random=10" />
+    <img src="https://loremflickr.com/320/240?random=11" />
+    <img src="https://loremflickr.com/320/240?random=12" />
+
+    <script>
+      $("img").on("click", function(){
+      $("img").addClass("img-no");
+      })
+    </script>
 
   </body>
 </html>

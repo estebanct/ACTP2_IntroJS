@@ -10,8 +10,34 @@ Tip: Investigar el evento window.onload
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
   </head>
   <body>
+    <img src="https://loremflickr.com/320/240?random=1" />
+    <img src="https://loremflickr.com/320/240?random=2" />
+    <img src="https://loremflickr.com/320/240?random=3" />
+    <img src="https://loremflickr.com/320/240?random=4" />
+    <img src="https://loremflickr.com/320/240?random=5" />
+    <img src="https://loremflickr.com/320/240?random=6" />
+    <img src="https://loremflickr.com/320/240?random=7" />
+    <img src="https://loremflickr.com/320/240?random=8" />
+    <img src="https://loremflickr.com/320/240?random=9" />
+    <img src="https://loremflickr.com/320/240?random=10" />
+    <img src="https://loremflickr.com/320/240?random=11" />
+    <img src="https://loremflickr.com/320/240?random=12" />
+
+    <script>
+      $(document).ready(function(){
+        alert('DOM Cargado');
+      })
+
+      function load() {
+      alert("Sitio Cargado");
+      }
+      window.onload = load;
+    </script>
+
 
   </body>
 </html>
